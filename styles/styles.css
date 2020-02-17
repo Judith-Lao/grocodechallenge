@@ -1,0 +1,272 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: gray
+}
+
+.nav-container {
+  display:flex;
+  width: 100%;
+  margin: auto;
+}
+
+.nav-container .login {
+  position: relative;
+  top: 10px;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  background-color:white;
+  border-radius: 20px;
+  list-style: none;
+}
+
+.nav-container .signup {
+  position: relative;
+  top: 10px;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  background-color:white;
+  border-radius: 20px;
+  list-style:none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav ul {
+  display:flex;
+}
+
+ul {
+  margin-left: 600px;
+  margin-right: 20px;
+  list-style: none;
+}
+
+.main-menu li {
+  display:flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.main-menu a {
+  padding-top: 20px;
+  margin: 20px;
+  color: #262626;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: wheat;
+  border: #262626;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.main-menu a:hover {
+  opacity: 0.7;
+}
+
+/* Dropdown Products */
+
+.dropdown-products {
+  position: relative;
+}
+
+.product-content {
+  display: none;
+  position: absolute;
+  color:black;
+  grid-template-columns: repeat(4, 1fr);
+  width: 102%;
+}
+
+.product-content.show{
+  display: grid;
+}
+
+.product-content img {
+  width: 20%;
+  margin-top: 20px;
+}
+
+.product-content p {
+  width: 300px;
+  margin: 0px;
+  color: lightslategray;
+}
+
+.product-content h2 {
+  margin: 20px;
+  padding: 15px 30px;
+}
+
+.product-content .learn-more {
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  color: #262626;
+  text-decoration: none;
+}
+
+.product-content .learn-more:hover {
+  color: red;
+  transition: all .4s ease;
+}
+
+.product-content .round {
+  border-radius: 75%;
+}
+
+.product-card {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+/* .product-card a .learn-more {
+
+} */
+
+.dictionary h2 {
+ margin: 25px ;
+ padding: 5px;
+}
+
+.dictionary p {
+  margin-top: 10px;
+}
+
+.dictionary .red {
+  color: white;
+  font-size: 12px;
+  background-color: rgb(222, 25, 25);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.dictionary .red:hover {
+  color:black;
+}
+
+.analytics p {
+  margin-bottom: 20px;
+}
+
+.analytics-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.analytics-links a {
+  margin: 5px 5px;
+}
+
+.analytics-links i {
+  margin: 0px 5px;
+}
+
+.analytics-links .grey {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.analytics-links p {
+  margin: 0px;
+  width: auto;
+  font-weight: bolder;
+}
+
+/* Industry content */
+
+.dropdown-industries {
+  position: relative;
+}
+
+.industry-content {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  color:black;
+  background-color: whitesmoke;
+  padding: 50px;
+  justify-content: center;
+  width: 1420px;
+  transform: translateX(-20px);
+}
+
+.industry-content.show{
+  display: flex;
+}
+
+.industry-card {
+  display:flex;
+  justify-content: center;
+  width: auto;
+  transform: translateX(-20px);
+}
+
+.industry-card a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 10px;
+  background-color: grey;
+  padding-top: 10px;
+  border-radius:20px;
+  text-align: center;
+  width: 120px;
+  height: 20px;
+  position: relative;
+  top: 50%;
+  right: 50%;
+}
+
+.img-hover-zoom {
+  height: 190px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  height: 200px;
+  width: 250px;
+  transition: transform .5s ease;
+}
+
+.financial img {
+  height: 200px;
+  width: 250px;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+.img-hover-zoom.financial {
+  object-fit:contain;
+}

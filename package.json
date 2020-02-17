@@ -1,0 +1,9 @@
+{
+  "name": "GI",
+  "version": "1.0.0",
+  "description": "gro intelligence navigation",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}

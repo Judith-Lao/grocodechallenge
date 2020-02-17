@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link href="/styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="/styles/entypo.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <div class="nav-container">
+      <img src="/images/logo.png" alt="Gro Intelligence Logo" class="logo"/>
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li><a href="#" class="dropdown-products">Products</a></li>
+          <li><a href="#" class="dropdown-industries">Industries</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="login">Login</a></li>
+          <li><a href="#" class="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+
+  </div>
+
+  <section class="product-content">
+    <div class="product-card">
+      <img src="/images/products/gro-web-app.png"/>
+      <h2>Gro web app</h2>
+      <p>
+        Jump straight into analysis through intuitive visualizations that can be monitored on live dashboards
+      </p>
+      <a href="#" class="learn-more">Learn more <i class="icon-chevron-right"></i></a>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div>
+    <div class="product-card analytics">
+      <img src="/images/products/gro-analytics.png"/>
+      <h2>Gro analytics</h2>
+      <p>
+        Gain a competitive edge by using Gro’s proprietary machine-learning algorithms and predictive models
+      </p>
+
+      <div class="analytics-links">
+        <p>US Corn</p>
+        <a href="#" class="grey">Yield Forecast</a>
+        <i class="icon-chevron-right"></i>
+      </div>
+      <div class="analytics-links">
+        <p>US soy</p>
+        <a href="#" class="grey">Yield Forecast</a>
+        <i class="icon-chevron-right"></i>
+      </div>
+      <div class="analytics-links">
+        <p>Argentina soy</p>
+        <a href="#" class="grey">Yield Forecast</a>
+        <i class="icon-chevron-right"></i>
+      </div>
+      <a href="#" class="learn-more">Learn more <i class="icon-chevron-right"></i></a>
+    </div>
+    <div class="product-card">
+      <img src="/images/products/gro-api.jpg" class="round"/>
+      <h2>Gro API</h2>
+      <p>
+        Gain direct access to Gro’s entire database, including supply, demand, weather, and environment data
+      </p>
+      <a href="#" class="learn-more">Learn more <i class="icon-chevron-right"></i></a>
+    </div>
+    <div class="product-card dictionary">
+      <img src="/images/products/gro-dictionary.png"/>
+      <h2>Gro dictionary</h2>
+      <p>
+        Explore data from our collection of over 8.828M datasets
+      </p>
+      <a href="#" class="red learn-more">Learn more <i class="icon-chevron-right"></i></a>
+    </div>
+  </section>
+
+  <section class="industry-content">
+    <div class="industry-card">
+      <div class="img-hover-zoom financial">
+        <img src="/images/industries/financial-services.jpg" alt="financial-services">
+      </div>
+      <a href="#">FINANCIAL SERVICES</a>
+    </div>
+    <div class="industry-card">
+      <div class="img-hover-zoom">
+        <img src="/images/industries/physical-traders.jpg" alt="physical-traders">
+      </div>
+      <a href="#">PHYSICAL TRADERS</a>
+    </div>
+    <div class="industry-card">
+      <div class="img-hover-zoom">
+        <img src="/images/industries/sources-and-procurement.jpg" alt="sourcing-and-procurement">
+      </div>
+      <a href="#" class="sourcing">SOURCING AND PROCUREMENT</a>
+    </div>
+    <div class="industry-card">
+      <div class="img-hover-zoom">
+        <img  src="/images/industries/consulting.jpg" alt="consulting">
+      </div>
+      <a href="#">CONSULTING</a>
+    </div>
+  </section>
+
+  <script>
+    document.querySelector('.dropdown-products').addEventListener('mouseover', () => document.querySelector('.product-content').classList.toggle('show'));
+    document.querySelector('.dropdown-industries').addEventListener('mouseover', () => document.querySelector('.industry-content').classList.toggle('show'));
+  </script>
+  </body>
+</html>
